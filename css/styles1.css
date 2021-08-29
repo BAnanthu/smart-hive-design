@@ -18,4 +18,70 @@ body .container .main-content {
   display: block;
 }
 
+
 /*# sourceMappingURL=styles1.css.map */
+
+.content-main{
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-columns:1fr;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+/* .red{
+  background-color: crimson;
+} */
+
+/* .green{
+  background-color: rgb(60, 220, 20);
+}
+
+.blue{
+  background-color: rgb(50, 20, 220);
+}
+/*  */
+.red{
+  display: none;
+} 
+.item-1{
+  text-align: center;
+}
+.item-2{
+  text-align: center;
+}
+.in3-items{
+  background-color: rgb(233, 233, 233);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:1fr ;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 10px;
+}
+.clr-item{
+  width: 200px ;
+  text-align: center;
+}
+.box{
+  width: 200px ;
+  border: solid rgb(204, 204, 204) 1px;
+  padding: 4px 10px;
+  text-align: center;
+}
+.button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+Button {
+  border: none;
+  background-color: #3a3a80;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 50px;
+  
+}
