@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    .container{
+        // margin: 0px 5%;
+        // background-color: rgb(255, 115, 21);
+        .header{
+            height: 100px;
+            display: grid;
+            grid-template-columns: 1fr 10fr 1fr;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 2px 1px 10px -3px rgb(105, 105, 105);
+            .logo{
+                display: flex;
+                justify-self: center;
+                align-self: center;
+                height: 60px;
+                grid-column: 2/3;
+            }
+        }
+        .content{
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: .1fr 3fr 9fr 1fr;
+            grid-row: 1fr 5fr;
+           
+            .top-bar{
+                // height: 100px;
+                grid-column: 3/4;
+                grid-row: 1/2;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                .text-bg{
+                    // height: 20px;
+                    margin: 7px;
+                    padding: 7px 7px;
+                    background-color: rgb(228, 228, 228);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    span{
+                        font-weight: 500;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                }
+            }
+            
+            .main-content{
+                // height: 100px;
+                grid-column: 3/4;
+                grid-row: 2/3;
+                // background-color: rgb(40, 255, 136);
+            }
+            .side-bar{
+                height: 200px;
+                grid-row: 1/3;
+                grid-column: 2/3;
+          
+                background-color: rgb(255, 255, 255);
+            }
+        }
+        .side-bar{
+   
+            .menu-items{
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                padding: 20px 10px;
+    
+                border: solid rgb(224, 224, 224) 1px;
+                margin: 10px 20px;
+                margin-right: 90px;
+                h4{
+                    font-size: 20px;
+                    color: rgb(211, 211, 211);
+                    margin: 0px 20px;
+                    text-align: center;
+                }
+                span{
+                    font-weight: 500;
+                    color: rgb(112, 112, 112);
+                }
+                
+                
+            }
+            .selected{
+                background-color: rgb(255, 115, 21);
+                clip-path: polygon(75% 0%, 87% 51%, 75% 100%, 0% 100%, 0 54%, 0% 0%);
+                margin: 10px 20px;
+                span{
+                    font-weight: 500;
+                    color: white;
+                }
+            }
+        }
+        .main-content{
+            height: 370px;
+            display: grid;
+           
+            grid-template-rows: 1fr 1fr 1fr 1fr 2fr 1fr;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .text1{
+                color: rgb(255, 115, 21);
+            }
+            Button{
+                border: none;
+                background-color: rgb(58, 58, 128);
+                color: white;
+                padding: 10px 30px;
+                border-radius: 50px;
+            }
+            .info-icon{
+                color: rgb(58, 58, 128); margin-left: 10px;
+            }
+            .active{
+                background-color: rgb(255, 115, 21);
+                color: white;
+                .info-icon{
+                    color: rgb(255, 255, 255); 
+                }
+            }
+            .text-items{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                .text-info{
+                    padding: 5px 10px;
+                    margin-right: 10px;
+                    border: solid rgb(219, 219, 219) 1px;
+                }
+               
+            }
+        }
+        .information{
+            margin: 0px 50px;
+            padding: 50px 50px; 
+            background-color: rgb(202, 202, 202);
+            text-align: center;
+            margin-bottom: 100px;
+            span{
+               font-size: 30px;
+            }
+        }.close{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 10px 50px;
+            margin-top: 50;
+            background-color: rgb(255, 255, 255);
+        }
+    }
+}
+
